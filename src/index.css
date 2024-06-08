@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0f0f0f;
+}
+.navbar {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: #fff;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+.navbar__logo {
+  font-weight: bold;
+}
+.navbar__list {
+  list-style: none;
+  display: flex;
+}
+.navbar__item {
+  margin-right: 20px;
+}
+.navbar__item a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  transition: color 0.3s;
+  &:hover {
+    color: #00d9ff;
+  }
+}
+.mobile-menu {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+.navbar__logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Work Sans", sans-serif;
+}
+.navbar__logo i {
+  animation: rotate 10s infinite;
+  transition: color 0.3s ease-in-out;
+  filter: drop-shadow(0 0 0.75rem #48ff00);
+}
+@keyframes rotate {
+  0% {
+    color: rgb(28, 184, 28);
+  }
+  50% {
+    color: rgb(55, 221, 55);
+    filter: drop-shadow(2 4 0.75rem #48ff00);
+  }
+  100% {
+    color: rgb(49, 246, 0);
+    filter: drop-shadow(2 10 0.75rem #00ff3c);
+  }
+}
+.mobile-menu {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.hamburger i:hover {
+  color: rgb(55, 221, 55);
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar__list {
+    display: none;
+  }
+  .navbar__logo {
+    text-align: center;
+  }
+  .navbar {
+    text-align: center;
+  }
+  #navbar__logo {
+    margin: 0 auto;
+  }
+}
+.mobile-menu {
+  background-color: black;
+  padding: 15px 20px;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+#moonicon {
+  display: none;
+}
+.projcont {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1.1px;
+  text-align: center;
+  box-shadow: 2px 4px 4px rgb(40, 40, 40);
+}
+.user-details {
+  margin-left: 10px;
+}
+.d-flex img {
+  border-style: solid;
+}
+.whitefoot {
+  display: none;
+}
+.blackfoot {
+  display: block;
+}
+
+.custom-user-avatar {
+  width: 50px;
+  height: 50px;
+}
+.userbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mt-10 {
+  margin-top: 115px;
+}
+#badge {
+  display: none;
+}
+.intro {
+  display: flex;
+  padding: 10px;
+  margin-left: 15px;
+  max-width: 100%;
+  justify-content: center;
+}
+.intro .info {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.intro .info h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.intro .info p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.intro .complogo {
+  display: flex;
+  justify-content: left;
+}
+.intro .complogo img {
+  border-radius: 50%;
+}
+.ourprod h1 {
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+.client h1 {
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+.ourserve {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ourserve .serv {
+  padding: 10px;
+}
+.ourserve .serv img {
+  height: 120px;
+}
+.wesrv h1 {
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
